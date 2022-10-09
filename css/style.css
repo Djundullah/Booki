@@ -1,0 +1,43 @@
+/* * {
+    margin: 0;
+    padding: 0; 
+} */
+body {
+    font-family:"Raleway"; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    /* align-items: center; */
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+header img {
+    width: 70%;
+    height: 70%;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+nav li a {
+    text-decoration: none;
+    color: #000;
+    padding: 35px;
+}
+
+header nav li .active, a:active {
+    color: #0065fc;
+    border-top: 3px #0065fc solid;
+}
+
+nav li a:hover {
+    border-top: 3px #0065fc solid;
+    color:#0065fc;
+    
+}
