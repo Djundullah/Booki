@@ -49,18 +49,22 @@ nav li a:hover {
 
 /* Recherche début */
 
+.main p {
+    font-size: 20px;
+}
+
 .search {
     margin-top: 35px;
 }
 
 .search form {
     display: flex;
-    height: 60px;
+    height: 50px;
     
 }
 .localisation {
     background-color: #F2F2F2;
-    padding: 20px;
+    padding: 15px;
     border-radius: 15px 0px 0px 15px;
 }
 .input-search {
@@ -73,11 +77,11 @@ nav li a:hover {
 }
 
 .btn-search {
-    width: 200px;
+    width: 150px;
     color: #fff;
     background: #0065fc;
-    font-size: 25px;
-    border-radius: 0 15px 15px 0;
+    font-size: 20px;
+    border-radius: 0 21px 21px 0;
     border: none;
 }
 
@@ -88,6 +92,7 @@ nav li a:hover {
 
 .filter h2 {
     margin-right: 30px;
+    font-weight: bolder;
 }
 .filter-list {
     display: flex;
@@ -97,10 +102,23 @@ nav li a:hover {
 .filter-list>* {
     display: flex;
     align-items: center;
-    margin-right: 20px;
+    margin-right: 50px;
     border: 3px solid #F2F2F2;
     padding: 15px;
-    border-radius: 25px 25px 25px 25px;
-    
-    
+    border-radius: 30px 30px 30px 30px;  
+}
+
+.filter-list span {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-right: 20px;
+    font-weight: bolder;
+    color: #000;
+    font-size: 20px;
+}
+
+.filter-list>*:hover {
+    background-color: #DEEBFF;
+    cursor: pointer;
 }
