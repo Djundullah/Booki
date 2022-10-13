@@ -4,6 +4,8 @@
 } */
 body {
     font-family:"Raleway"; 
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 /* Header début */
@@ -19,8 +21,9 @@ header nav {
     align-items: center;
 }
 header img {
-    width: 70%;
-    height: 70%;
+    width: 90px;
+    height: 50px;
+    margin-top: 12px;
 }
 nav ul {
     display: flex;
@@ -65,7 +68,7 @@ nav li a:hover {
     font-size: 20px;
     font-weight: bolder;
     color: #000;
-    border: 1px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     padding: 20px;
 }
 
@@ -76,4 +79,28 @@ nav li a:hover {
     font-size: 25px;
     border-radius: 0 15px 15px 0;
     border: none;
+}
+
+.filter {
+    display: flex;
+    margin-top: 40px;
+}
+
+.filter h2 {
+    margin-right: 30px;
+}
+.filter-list {
+    display: flex;
+    align-items: center;
+}
+
+.filter-list>* {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border: 3px solid #F2F2F2;
+    padding: 15px;
+    border-radius: 25px 25px 25px 25px;
+    
+    
 }
