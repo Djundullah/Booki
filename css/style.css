@@ -6,7 +6,7 @@ body {
     font-family:"Raleway"; 
     padding-left: 2%;
     padding-right: 2%;
-    width: 1400px;
+    /* width: 1400px; */
 }
 
 /* Header début */
@@ -129,6 +129,7 @@ nav li a:hover {
     display: flex;
     align-items: center;
    margin-top: 30px; 
+   margin-bottom: 25px;
 }
 
 .note span {
@@ -147,4 +148,123 @@ nav li a:hover {
 }
 .note p {
     font-size: 18px;
+}
+
+/* hosting */
+
+.container {
+    display: flex;
+    gap: 20px
+}
+
+.hosts {
+    background-color: #F2F2F2;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+
+}
+
+
+.hosting-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 35px;
+    grid-auto-rows: minmax(100px, auto);
+    margin: 30px;
+    background-color: #F2F2F2;
+}
+.hosts h4 {
+    display: flex;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+.hosts article {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.hosts img {
+    width: 230px;
+    height: 120px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.container-text {
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+}
+
+.hosts p {
+    background-color: #fff;
+    padding-left: 10px;
+    margin: 5px;
+}
+
+
+.host-text {
+    
+    font-weight: bolder;
+}
+
+
+.container-text img {
+    width: 12px;
+    height: 12px;
+    margin-left: -10px;
+}
+
+#first-star {
+    margin-left: 10px
+}
+/* popular */
+
+.divpopulars {
+     width: 100%;
+     border-radius: 15px 15px 15px 15px;
+     background-color: #F2F2F2;
+}
+.populars h4 {
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+.popular-cards {
+    margin: 10px;
+}
+.popular-cards article {
+    margin-bottom: 35px;
+    display: flex;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.popular-cards img {
+    width: 200px;
+    height: 140px;
+    border-radius: 15px 0px 0px 15px;
+    margin: 5px;
+   
+}
+
+.popular-texts {
+    padding-left: 15px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.popular-texts img {
+    width: 12px;
+    height: 12px;
+    margin-top: 40px;
+    margin-left: -10px;
+}
+
+#first-star-popular {
+    margin-left: 10px;
 }
