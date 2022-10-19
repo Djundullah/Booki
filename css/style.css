@@ -128,8 +128,8 @@ nav li a:hover {
 .note {
     display: flex;
     align-items: center;
-   margin-top: 30px; 
-   margin-bottom: 25px;
+    margin-top: 30px; 
+    margin-bottom: 25px;
 }
 
 .note span {
@@ -184,7 +184,7 @@ nav li a:hover {
 .hosts article {
     display: flex;
     flex-direction: column;
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 25px 25px 25px 25px;
 }
 
 .hosts img {
@@ -232,6 +232,7 @@ nav li a:hover {
 .populars h4 {
     padding: 10px;
     font-size: 20px;
+    margin-left: 15px;
 }
 
 
@@ -265,6 +266,44 @@ nav li a:hover {
     margin-left: -10px;
 }
 
-#first-star-popular {
+/* #first-star-popular {
     margin-left: 10px;
+} */
+
+/* étoiles */
+
+.rating-bars {
+    margin-left: 15px;
+    margin-bottom: 5px;
+}
+
+.fa fa-star {
+    font-size: 15px;
+}
+
+.rating-bar {
+    margin-top: 50px;
+}
+
+
+.fifth {
+    color: #F2F2F2;
+}
+
+.checked {
+    color: #0065fc;
+}
+
+
+
+.cardss {
+    display: flex;
+    align-items: center;
+
+}
+
+.cards {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
 }
