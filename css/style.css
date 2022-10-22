@@ -6,7 +6,7 @@ body {
     font-family:"Raleway"; 
     padding-left: 2%;
     padding-right: 2%;
-    /* width: 1400px; */
+    width: 1400px;
 }
 
 /* Header début */
@@ -162,7 +162,7 @@ nav li a:hover {
 
 .container {
     display: flex;
-    gap: 60px;
+    gap: 40px;
     justify-content: space-around;
 }
 
@@ -170,7 +170,7 @@ nav li a:hover {
     /*  */
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 60%;
 
     background-color: #F2F2F2;
     border-radius: 15px 15px 15px 15px;
@@ -179,7 +179,8 @@ nav li a:hover {
 }
 
 .hosting-cards {
-    display: flex;
+      display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background: #F2F2F2;
     border-radius: 20px;
     flex-wrap: wrap;
@@ -200,7 +201,7 @@ nav li a:hover {
     border-radius: 25px 25px 25px 25px;
     box-shadow: 0 0 16px #0000002e;
     flex: 0 0 250px;
-    margin: 25px;
+    margin: 20px;
 }
 
 .container .hosts article:hover {
@@ -211,10 +212,10 @@ nav li a:hover {
 
 .container .hosts img {
     object-fit: cover;
-    width: 280px;
-    height: 150px;
+    width: 230px;
+    height: 110px;
     border-radius: 20px 20px 0px 0px;
-    padding: 5px;
+    padding: 2px;
     background-color: #fff;
 }
 
@@ -231,7 +232,7 @@ nav li a:hover {
 
 
 .host-text {
-    font-size: 23px;
+    font-size: 15px;
     font-weight: bolder;
 }
 
@@ -265,14 +266,14 @@ nav li a:hover {
 }
 
 
-.popular-cards {
-    display: flex;
-    flex-direction: column;
+.popular-cards {  
+    display: grid;
+  grid-template-columns: repeat(1, 1fr);
     /* margin: 40px; */
-    gap: 10px;
+    /* gap: 10px; */
     justify-content: center;
     width: 100%;
-    padding-left: 70px;
+    padding-left: 50px;
 }
 .popular-cards article {
     width: 80%;
@@ -280,7 +281,7 @@ nav li a:hover {
     display: flex;
     background-color: #fff;
     border-radius: 20px;
-    height: auto;
+    height: 175px;
 }
 
 .popular-cards article:hover {
@@ -292,7 +293,7 @@ nav li a:hover {
 .popular-cards img {
     /* margin: 10px; */
     object-fit: cover;
-    width: 45%;
+    width: 40%;
     height: auto;
     border-radius: 15px 0px 0px 15px;
     margin: 5px;
@@ -345,7 +346,7 @@ nav li a:hover {
 }
 
 .rating-bar {
-    margin-bottom: 10px;
+    margin-top: -20px;
     margin-left: 10px;
 }
 
@@ -408,9 +409,12 @@ nav li a:hover {
     border-top-right-radius: 1em;
 }
 
-.container-activity-cards h4 {
-    font-size: larger;
-}
+/* .activity-image-card2 img {
+    width: 390px;
+    height: 500px;
+    
+
+} */
 
 
 
