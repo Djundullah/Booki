@@ -89,7 +89,8 @@ nav li a:hover {
 .filter {
     display: flex;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 40px; 
+    width: 200px;
 }
 
 .filter h2 {
@@ -99,30 +100,37 @@ nav li a:hover {
 .filter-list {
     display: flex;
     align-items: center;
+    gap: 25px;
 }
 
 .filter-list>* {
     display: flex;
     align-items: center;
-    margin-right: 50px;
+    margin-right: 20px;
     border: 3px solid #F2F2F2;
     padding: 15px;
-    border-radius: 30px 30px 30px 30px;  
+    border-radius: 30px 30px 30px 30px;
 }
 
 .filter-list span {
+    width: max-content;
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 30px;
-    margin-right: 20px;
     font-weight: bolder;
     color: #000;
-    font-size: 20px;
+    font-size: 17px;
+    gap: 15px;
 }
 
 .filter-list>*:hover {
     background-color: #DEEBFF;
     cursor: pointer;
+}
+
+.filter-list img {
+    
+    margin-left: 5px;
 }
 
 .note {
@@ -154,42 +162,57 @@ nav li a:hover {
 
 .container {
     display: flex;
-    gap: 20px
+    gap: 60px;
+    justify-content: space-around;
 }
 
-.hosts {
+.container .hosts {
+    /*  */
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+
     background-color: #F2F2F2;
     border-radius: 15px 15px 15px 15px;
     padding: 10px;
 
 }
 
-
 .hosting-cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 35px;
-    grid-auto-rows: minmax(100px, auto);
-    margin: 30px;
-    background-color: #F2F2F2;
+    display: flex;
+    background: #F2F2F2;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* gap: 50px; */
 }
-.hosts h4 {
+.container .hosts h4 {
     display: flex;
     font-weight: bolder;
     margin-bottom: 20px;
-    padding-left: 25px;
-    font-size: 20px;
+    padding-left: 45px;
+    font-size: 27px;
 }
 
-.hosts article {
-    display: flex;
-    flex-direction: column;
+.container .hosts article {
+    background-color: #fff;
+    padding: 2px;
     border-radius: 25px 25px 25px 25px;
+    box-shadow: 0 0 16px #0000002e;
+    flex: 0 0 250px;
+    margin: 25px;
 }
 
-.hosts img {
-    width: 230px;
-    height: 120px;
+.container .hosts article:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    transition-duration: 0.8s;
+}
+
+.container .hosts img {
+    object-fit: cover;
+    width: 280px;
+    height: 150px;
     border-radius: 20px 20px 0px 0px;
     padding: 5px;
     background-color: #fff;
@@ -200,7 +223,7 @@ nav li a:hover {
     border-radius: 0 0 15px 15px;
 }
 
-.hosts p {
+.container .hosts p {
     background-color: #fff;
     padding-left: 10px;
     margin: 5px;
@@ -208,7 +231,7 @@ nav li a:hover {
 
 
 .host-text {
-    
+    font-size: 23px;
     font-weight: bolder;
 }
 
@@ -223,40 +246,80 @@ nav li a:hover {
     margin-left: 10px
 }
 /* popular */
-
+.populars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .divpopulars {
-     width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+     /* width: 35%; */
      border-radius: 15px 15px 15px 15px;
      background-color: #F2F2F2;
 }
 .populars h4 {
-    padding: 10px;
-    font-size: 20px;
-    margin-left: 15px;
+    padding-left: 20px;
+    font-size: 27px;
+    margin-left: 50px;
 }
 
 
 .popular-cards {
-    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    /* margin: 40px; */
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    padding-left: 70px;
 }
 .popular-cards article {
+    width: 80%;
     margin-bottom: 35px;
     display: flex;
     background-color: #fff;
     border-radius: 20px;
+    height: auto;
+}
+
+.popular-cards article:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    transition-duration: 0.8s;
 }
 
 .popular-cards img {
-    width: 200px;
-    height: 140px;
+    /* margin: 10px; */
+    object-fit: cover;
+    width: 45%;
+    height: auto;
     border-radius: 15px 0px 0px 15px;
     margin: 5px;
+    cursor: pointer;
    
 }
 
 .popular-texts {
-    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5px;
     border-radius: 25px 25px 25px 25px;
+    /* width: 100%; */
+}
+
+.popular-text {
+    width: 80%;
+    font-weight: bolder;
+    font-size: 23px;
+    margin-left: 10px;
+}
+
+.popular-description {
+    margin-bottom: 55px;
+    margin-top: -5px;
+    font-size: 16px;
+    margin-left: 10px;
 }
 
 .popular-texts img {
@@ -273,7 +336,7 @@ nav li a:hover {
 /* étoiles */
 
 .rating-bars {
-    margin-left: 15px;
+     margin-left: 15px;
     margin-bottom: 5px;
 }
 
@@ -282,7 +345,8 @@ nav li a:hover {
 }
 
 .rating-bar {
-    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 10px;
 }
 
 
@@ -294,16 +358,99 @@ nav li a:hover {
     color: #0065fc;
 }
 
+.activities h4 {
 
+}
 
-.cardss {
+.cards {
     display: flex;
     align-items: center;
 
 }
 
-.cards {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+/* ACTIVITES */
+
+.activity {
+    margin-top: 20px;
+    display: flex;
 }
+
+.activity .activity-cards {
+    width: 100%;
+}
+
+.activity .activity-cards .container-activity-cards {
+    display: flex;
+    max-width: fit-content;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.activity .activity-cards .container-activity-cards article {
+    background: #fff;
+    border-radius: 1em;
+    box-shadow: 0 0 16px #0000002e;
+    margin: 25px;
+    width: 25%;
+}
+
+.activity .activity-cards .container-activity-cards article:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+    transition-duration: 0.8s;
+}
+
+.activity .activity-cards .container-activity-cards article .activity-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+}
+
+.container-activity-cards h4 {
+    font-size: larger;
+}
+
+
+
+.activity .activity-cards .container-activity-cards article h4 {
+    margin: 4%;
+}
+
+/* FOOTER */
+footer {
+    background: var(--background-color);
+    display: flex;
+}
+
+footer .footer {
+    display: flex;
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+    padding: 0 2rem;
+    line-height: 1.5rem;
+    font-weight: 200;
+}
+
+footer .footer #about, #hosts, #help {
+    width: 30%;
+    padding: 2rem 2rem;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+
+footer #about a, #hosts a, #help a {
+    padding: 0;
+    margin: 0;    
+    text-decoration: none;
+}
+
+footer #about h3, #hosts h3, #help h3 {
+    margin-left: 2.4rem;
+}
+
