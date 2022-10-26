@@ -86,6 +86,10 @@ nav li a:hover {
     border: none;
 }
 
+.mobile {
+    display: none;
+}
+
 .filter {
     display: flex;
     align-items: center;
@@ -463,7 +467,7 @@ footer #about h3, #hosts h3, #help h3 {
 
 @media screen and (max-width: 992px) {
     body {
-        width: 100%;
+        width: 992px;
     }
 
     .container {
@@ -534,4 +538,76 @@ footer #about h3, #hosts h3, #help h3 {
     footer {
         background-color: #F2F2F2;
     }
+}
+
+@media screen and ( max-width: 768px) {
+ 
+    .body {
+        width: 768px;
+    }
+
+    .btn-search {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .mobile {
+        color: white;
+        width: 50px;
+    }
+
+    header {
+        justify-content: center;
+        align-items: center !important;
+        flex-flow: column;
+    }
+
+    header li {
+        align-self: flex-end;
+    }
+
+    header img {
+        width: 100% !important;
+        
+    }
+
+    nav {
+        width: 100%;
+        
+    }
+
+    #host {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+    }
+
+    #activity {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        
+    }
+
+    nav ul {
+        padding-left: 0px;
+        width: 100% !important;
+    }
+
+    header nav li a:active {
+    color: #0065fc;
+    border-top: 3px #0065fc solid;
+}
+
+    nav li a:hover {
+        border-top: none;
+        color:#0065fc;  
+        border-bottom: 3px #0065fc solid ;  
+} 
+
 }
