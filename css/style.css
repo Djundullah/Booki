@@ -356,7 +356,7 @@ nav li a:hover {
 
 .rating-bars {
      margin-left: 15px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .fa fa-star {
@@ -426,7 +426,7 @@ nav li a:hover {
 
 
 .activity .activity-cards .container-activity-cards article h4 {
-    margin: 4%;
+    margin: 6%;
     font-size: 15px;
     -webkit-text-stroke-width: thin;
 }
@@ -832,6 +832,10 @@ footer #about h3, #hosts h3, #help h3 {
 
     .show-more {
         display: none;
+    }
+    
+    .fa-star::before {
+        font-size: x-large;
     }
 
     /* host */
